@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="El-Abiad.css">
+  <title>Spain</title>
+</head>
+<body>
+  <!--This is the main section containing the thumbnails-->
+  <div class="main">
+    <div class="main-header">
+      <h1>Spanish Cuisine</h1>
+      <p>A journey to Spain's Mediterranean coast.</p>
+      <div class="hand">
+        <img src="images/cuisine.png" alt="">
+      </div>
+    </div>
+
+    <p class="main-question">
+      What would you choose?
+    </p>
+
+    <div class="card-container">
+      <div class="dish-card">
+        <a href="#tortilla-section">
+          <img src="images/tortilla-thumbnail.jpeg" alt="tortilla-photo">
+        </a>
+      </div>
+
+      <div class="dish-card">
+        <a href="#paella-section">
+          <img src="images/paella-thumbnail.jpg" alt="paella-photo">
+        </a>
+      </div>
+
+      <div class="dish-card">
+        <a href="#churros-section">
+          <img src="images/churros-thumbnail.jpg" alt="churros-photo">
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!--This is the first dish section-->
+  <div class="dish-detail-section" id="tortilla-section">
+    <h1 class="dish-title">Tortilla de patatas con cebolla</h1>
+
+    <button id="change-button-tortilla" class="change-button">change photo</button>
+
+    <div class="dish-block">
+      <div class="dish-info">
+        <div class="summary">
+          Made with potatoes, eggs, onions, and a generous sprinkle of love, 
+          Tortilla de Patatas con Cebolla is Spain's ultimate student favorite. 
+          Affordable, quick to prepare, and deliciously filling, this classic 
+          Spanish omelet is perfect for breakfast
+        </div>
+        <div class="random-fact">
+          <button class="rand-fact-button" id="rand-fact-button-tortilla">
+            Display a Random Fact!
+          </button>
+
+          <p id="tortilla-fact">Mexico has more Spanish speakers than Spain itself</p>
+        </div>
+      </div>
+      <div class="dish-photo">
+        <img id="tortilla-photo" src="images/tortilla-main1.jpg" alt="tortilla-photo">
+      </div>
+    </div>
+  </div>
+
+    <!--This is the second dish section-->
+  <div class="dish-detail-section" id="paella-section">
+    <h1 class="dish-title">Paella</h1>
+
+    <button id="change-button-paella" class="change-button">change photo</button>
+
+    <div class="dish-block">
+      <div class="dish-info">
+        <div class="summary">
+          Born in Valencia,  authentic paella combines bomba rice, 
+          saffron, fresh seafood, and seasonal vegetables. 
+          This iconic dish transforms simple ingredients into an absolute masterpiece
+        </div>
+
+        <div class="random-fact">
+          <button class="rand-fact-button" id="rand-fact-button-paella">
+            Display a Random Fact!
+          </button>
+
+          <p id="paella-fact">Spanish is an official language in more than 20 countries.</p>
+        </div>
+      </div>
+
+      <div class="dish-photo">
+        <img id="paella-photo" src="images/paella-main1.jpg" alt="paella-photo">
+      </div>
+    </div>
+  </div>
+
+  <!--This is the third dish section-->
+  <div class="dish-detail-section" id="churros-section">
+    <h1 class="dish-title">Churros</h1>
+
+    <button id="change-button-churros" class="change-button">change photo</button>
+
+    <div class="dish-block">
+      <div class="dish-info">
+        <div class="summary">
+          Crispy on the outside, pillowy-soft inside, 
+          dusted with cinnamon sugar and paired with thick, 
+          velvety chocolate, churros turn breakfast into celebration.
+        </div>
+
+        <div class="random-fact">
+          <button class="rand-fact-button" id="rand-fact-button-churros">
+            Display a Random Fact!
+          </button>
+
+          <p id="churros-fact">The Spanish word for 'sugar,' azúcar, is very similar to the Arabic word (sukkar).</p>
+        </div>
+      </div>
+      <div class="dish-photo">
+        <img id="churros-photo" src="images/churros-main1.jpg" alt="churros-photo">
+      </div>
+    </div>
+  </div>
+
+  <script src="El-Abiad.js"></script>
+</body>
+</html>

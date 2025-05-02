@@ -1,0 +1,86 @@
+body {
+  background-color: #e7e0d3;
+  background-image: url('https://www.transparenttextures.com/patterns/food.png');
+  color: #181f2c;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  position: relative;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  width: 260px;
+  border: 1px solid #181f2c;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+input:focus {
+  outline: none;
+  border-color: #2a3547;
+}
+button {
+  background-color: #181f2c;
+  color: #e7e0d3;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #2a3547;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+.switch-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.switch-link a {
+  color: #181f2c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.switch-link a:hover {
+  color: #2a3547;
+}
+.form {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.form.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+#message {
+  margin-top: 20px;
+  font-size: 14px;
+  min-height: 20px;
+}

@@ -1,0 +1,26 @@
+body{
+
+    background-color: #e7e0d3  ;
+}
+
+.photo {
+    border: 3px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+
+}
+.photo:hover{
+    border-color:#ccc ;
+    transform: scale(1.05);
+}
+li{
+    font-weight: bold;        }
+
+.ingredients {
+    display: block;
+}
+ul{
+    display: none;
+}

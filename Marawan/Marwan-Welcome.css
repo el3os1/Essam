@@ -1,0 +1,59 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #e7e0d3;
+  background-image: url('https://www.transparenttextures.com/patterns/food.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.welcome-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+
+  text-align: center;
+  border: 2px solid #181f2c;
+  margin: 40px;
+  box-shadow:0 5px 15px rgb(20, 40, 40) ;
+  transition: 0.2s;
+}
+a{
+  text-decoration: none;
+  color: #af4309;
+}
+
+h1 {
+  color: #181f2c;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.dis{
+  color:#aa3f05 ;
+  font-weight: bolder;
+}
+p {
+  color: #181f2c;
+  font-size: 16px;
+  transition: 0.2s;
+}
+.welcome-container:hover{
+   background-color:#2c2c2c;
+   p{
+    color: #dbcab4;
+   }
+   h1{
+    color: #ffff;
+   }
+  .dis{
+      color: rgb(148, 141, 141);
+  }
+  a{
+    color: rgb(182, 162, 162);
+  }
+  transform:scale(1.02);
+  } 
+  
+

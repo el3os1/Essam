@@ -1,0 +1,336 @@
+:root{
+--black-color:black;
+--red-color:red;
+--white-color:white;
+--main-color-p:#181f2c;
+--sec-color-back:#e7e0d3;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style: none;
+}
+/* start heading */
+header{
+    background-color: #d3c9b7;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s 0.1s ease-in-out;
+}
+header:hover{
+    box-shadow: 5px 5px 15px var(--white-color);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 40px;
+   min-height: 97px;
+}
+header img{
+    height: 40px;
+    margin-left: 40px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a{
+     display: block;
+     color: var(--black-color);
+     text-decoration: none;
+     font-size: 20px;
+     position: relative;
+     padding: 20px 10px;
+     transition:transform 0.5s 0.3s ease-in-out ;
+}
+header nav ul li a:hover{
+    background:linear-gradient(to right,red 0,red 40%,white 50%);
+    background-clip: text;
+    transform: scale(1.2);
+    color: transparent;
+    border-bottom: 3px solid rgb(238, 238, 238);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+/* end heading */
+/* start landing */
+.landing{
+    min-height: 105vh;
+    background-color: #1f2021;
+    position: relative;
+    background: url(/Mazen/imges/WhatsApp\ Image\ 2025-04-25\ at\ 22.28.01_d7fd8d12.jpg) no-repeat center center;
+    background-size: cover;
+}
+.landing .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+.landing .text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    width: 50%;
+    background-color: transparent;
+    color: var(--red-color);
+    display: flex;
+    justify-content: flex-end;
+}
+.landing .text .content{
+    max-width: 500px;
+}
+.landing .text .content h1{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.landing .text .content p{
+    font-size: 14px;
+    line-height: 2;
+    color: var(--white-color);
+}
+/* end landing */
+.main-dishes,
+.side-dishes,
+.Desserts,
+.Drinks
+{
+     padding-top: 60px;
+     padding-bottom: 60px;
+}
+.specialh{
+    color: #ededed;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.main-dishes-content{
+   margin-top: 100px;
+   display: flex;
+   flex-wrap: wrap;
+   color: var(--black-color-p);
+   justify-content: space-between;
+   background-color: #e7e0d3;
+   transition:all 0.5s 0.3s ease-in-out  ;
+   border-radius:20px ;
+}
+.main-dishes-content:hover{
+    box-shadow: 1px 10px 10px 1px black;
+    transform: scale(1.01);
+}
+.main-dishes-content .mainfood{
+    background-color: var(--white-color);
+}
+.main-dishes-content .image{
+   width: 250px;
+   height: 375px;
+   overflow: hidden;
+}
+
+.main-dishes-content .image img{
+ display: block;
+ width: 100%;
+ transition:0.5s 0.3s ease-in-out ;
+ border-radius:20px 0 0 ;
+}
+ .recipe{
+   position: absolute;
+   margin-left: 20%;
+   padding: 20px;
+}
+.recipe h3{
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+}
+.recipe p{
+line-height: 1.6;
+margin-bottom: 0;
+font-size: 20px;
+}
+/* side dishes */
+.side-dishes .side-dishes-content{
+    margin-top: 100px;
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+    color: var(--black-color-p);
+    background-color: #e7e0d3;
+    transition:all 0.5s 0.3s ease-in-out  ;
+    -webkit-transition:all 0.5s 0.3s ease-in-out  ;
+    -moz-transition:all 0.5s 0.3s ease-in-out  ;
+    -ms-transition:all 0.5s 0.3s ease-in-out  ;
+    -o-transition:all 0.5s 0.3s ease-in-out  ;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+.side-dishes-content:hover{
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    box-shadow: 1px 10px 10px 1px black;
+}
+.side-dishes .side-dishes-content .image{
+    width: 250px;
+   height: 450px;
+}
+.side-dishes .side-dishes-content .image img{
+    height: 450px;
+    max-width: 100%;
+    border-radius:20px 0 0 20px;
+    -webkit-border-radius:20px 0 0 20px;
+    -moz-border-radius:20px 0 0 20px;
+    -ms-border-radius:20px 0 0 20px;
+    -o-border-radius:20px 0 0 20px;
+}
+/* Desserts */
+.Desserts .Desserts-content{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--sec-color-back);
+    color: var(--black-color-p);
+    transition: all 0.5s 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.Desserts-content:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 10px 10px 1px black;
+}
+.Desserts .Desserts-content .image{
+    width: 250px;
+    height: 400px;
+    transition:all 0.5s 0.5s ease-in-out ;
+    -webkit-transition:all 0.5s 0.5s ease-in-out ;
+    -moz-transition:all 0.5s 0.5s ease-in-out ;
+    -ms-transition:all 0.5s 0.5s ease-in-out ;
+    -o-transition:all 0.5s 0.5s ease-in-out ;
+}
+.Desserts .Desserts-content .image img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px 0 0 20px ;
+}
+/* Drinks */
+.Drinks .Drinks-content{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    color: var(--black-color-p);
+    background-color: var(--sec-color-back);
+    transition:all 0.5s 0.3s ease-in-out  ;
+    border-radius:20px ;
+}
+.Drinks-content:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 10px 10px 1px black;
+}
+.Drinks-content .image{
+    width: 250px;
+    height: 429px;
+}
+.Drinks-content .image img{
+    max-width: 100%;
+    height: 100%;
+    border-radius:20px 0 0 20px;
+}
+.Drinks-content .recipe{
+    width: fit-content;
+    height: 100%;
+    position: absolute;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.rating-box{
+    display: contents;
+    width: fit-content;
+    position: absolute;
+    background-color: var(--sec-color-back);
+    padding: 0 50px 35px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.rating-box header{
+    display: contents;
+    position: relative;
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+text-align: center;
+}
+.rating-box .stars{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    gap: 25px;
+}
+.stars i{
+color: gray;
+font-size: 35px;
+cursor: pointer;
+}
+.stars i.active{
+    color: #ff9c1a;
+}
+.moon{
+    margin-top: 17px;
+    font-size: 35px;
+    margin-left: 10px;
+    color: gray;
+    cursor: pointer;
+    transition:all 0.1s 0.1s ease-in-out ;
+}
+.moon:hover{
+    transform: scale(1.1);
+}
+.footer{
+    background-color: var(--sec-color-back);
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span{
+font-weight: bold;
+color:black;
+}
